@@ -7,7 +7,7 @@
         <title>Bri Cochran</title>
 
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="style.css" rel="stylesheet" />
+        <link href="css/style.css" rel="stylesheet" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <!-- Add icon library -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -23,94 +23,40 @@
       <source src="videos/BACKGROUND.mp4" type="video/mp4">
     </video>
     
+
     <div class="container-fluid">
-      <ul class="nav nav-tabs">
-        <li class="active"><button style="background-color: #ff914d"class="nav-link active" data-toggle="tab" href="#home">About Me</button></li>
-        <li><button style="background-color: #ffde59"class="nav-link" data-toggle="tab" href="#menu1">Publications</button></li>
-        <li><button style="background-color: #ff914d"class="nav-link" data-toggle="tab" href="#menu2">Projects</button></li>
-        <li><button style="background-color: #ffde59"class="nav-link" data-toggle="tab" href="#menu3">Resume</button></li>
-      </ul>
-    
-      <div class="tab-content">
-        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="nav-home-tab"> 
-          <img src="images/me.jpg" alt="Profile Picture" />
-          <p class="introduction">
-            My name is Brianna(Bri) Cochran. I am from a small town in WV called Bluefield. Some of my hobbies include handcrafts, baking, reading, puzzling, painting, and video games. 
-            My family owns several animals, so I an animal lover by heart.
-            I received my bachelor's of Computer Science and bachelor's of Comprehensive Mathematics in the year 2020 from Concord University.
-            Afterwards, I was accepted and studied for a Ph.D. at the University of Wisconsin-Madison where I worked as a Teaching and Research Assistant.
-            My research focused primarily on Human-Computer Interaction in VR/AR for accessibility. I was involved in publishing 2 papers of which I was 2nd author to CHI and Assets conferences both highly respected.
-            After 3 years and considerable contemplation, I decided to get my Master's in Computer Science instead of a Ph.d. and graduated in 2023.
-            You can out more about my papers and past projects in their respective sections. 
-          </p>
+      <nav class="navbar navbar-expand-lg navbar-light py-3">
+        <div class="container px-5">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                </ul>
+            </div>
+        </div>
+      </nav>
+
+      <div class="profile">
+        <img src="images/me.jpg" alt="Profile Picture" />
+        <h2 class="flex-container">About Me</span></h2>
+        <p class="introduction">
+          My name is Brianna(Bri) Cochran. I am from a small town in WV called Bluefield. Some of my hobbies include handcrafting, baking, reading, puzzling, painting, and video games. 
+          I am an animal lover by heart.
+          I received my bachelor's of Computer Science and bachelor's of Comprehensive Mathematics in the year 2020 from Concord University.
+          Afterwards, I studied for a Ph.D. at the University of Wisconsin-Madison where I worked as a Teaching and Research Assistant.
+          My research focused primarily on Human-Computer Interaction in VR/AR for accessibility. I was involved in publishing 2 papers of which I was the 2nd author. The papers were accepted to highly respected conferences such as CHI and Assets.
+          After 3 years and considerable contemplation, I decided to get my Master's in Computer Science instead of a Ph.d. and graduated in 2023.
+          You can out more about my publications, past projects, and resume details in other sections.
+        </p>
+        <div class="flex-container">
           <a href="https://www.linkedin.com/in/bri-cochran/" class="fa fa-linkedin"></a>
           <a href="#" class="fa fa-twitter"></a>
           <a href="https://github.com/ladyrayrays" class="fa fa-github"></a>
-
-          
-          <!-- Gallery -->
-          <div class="row">
-          <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-          <img
-          src="images/cake.jpg"
-          class="w-100 shadow-1-strong rounded mb-4"
-          alt="Chocolate and Strawberry Cake I baked."
-          />
-
-          <img
-          src="images/biscut.jpg"
-          class="w-100 shadow-1-strong rounded mb-4"
-          alt="One of my cats named Biscuit."
-          />
-          </div>
-
-          <div class="col-lg-4 mb-4 mb-lg-0">
-          <img
-          src="images/gnome.jpg"
-          class="w-100 shadow-1-strong rounded mb-4"
-          alt="A Handcrafted ornament I made out of bobby pins in the shape of a gnome."
-          />
-
-          <img
-          src="images/puzzle.jpg"
-          class="w-100 shadow-1-strong rounded mb-4"
-          alt="A large 1000 piece puzzle I did that is glittery."
-          />
-          </div>
-
-          <div class="col-lg-4 mb-4 mb-lg-0">
-          <img
-          src="images/trees.jpg"
-          class="w-100 shadow-1-strong rounded mb-4"
-          alt="A watercolor painting I did of several trees from a video game."
-          />
-
-          <img
-          src="images/moose.jpg"
-          class="w-100 shadow-1-strong rounded mb-4"
-          alt="Anoter one of my cats named Moose."
-          />
-          </div>
-          </div>
-          <!-- Gallery -->
-        </div>
-        <div class="tab-pane fade" id="menu1"  role="tabpanel" aria-labelledby="nav-contact-tab">
-          <h1>Publications</h1>
-          <h3>Exploring the Design Space of Optical See-through AR Head-Mounted Displays to Support First Responders in the Field</h3>
-          <h3>Vrbubble: Enhancing peripheral awareness of avatars for people with visual impairments in social virtual reality.</h3>
-
-        </div>
-        <div  class="tab-pane fade" id="menu2" role="tabpanel" aria-labelledby="nav-contact-tab">
-          <h1>Projects</h1>
-        </div>
-        <div class="tab-pane fade" id="menu3" role="tabpanel" aria-labelledby="nav-contact-tab">
-          <object class="resume" data= "files/Resume.pdf" ></object>
         </div>
       </div>
     </div>
-
-
-
 
 
   </Body>

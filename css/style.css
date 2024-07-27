@@ -1,0 +1,69 @@
+
+img {
+    display: flex;
+    border-radius: 20px;
+    height: 400px;
+    float: left;
+}
+
+body{
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-left: 20px;
+}
+
+.profile{
+    padding-top: 150px;
+    
+}
+
+.introduction{
+    display: flex;
+    padding-left: 100px;
+    padding-right: 300px;
+    font-size: larger;
+    font-weight: 600;
+    align-content: end;
+    text-align: center;
+    color: #574840
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Set a height for the container */
+    color: #574840
+}
+
+
+
+button{
+    color: black;
+    background-color: black;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.resume{
+    text-align: center;
+    width: 100%;
+    height: 900px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: black;
+  }
